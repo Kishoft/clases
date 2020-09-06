@@ -27,6 +27,7 @@ class Vehiculo {
 
 //Instanciar la clase
 //Al instanciar la clase, estamos creando un objeto a partir de una clase
+//Para instanciarlo, usamos la palabra "new" seguido del nombre del objeto
 
 let autoDeEze = new Vehiculo("ABC123", "Naranja")
 let autoDeNaq = new Vehiculo("ABC124", "Blanco")

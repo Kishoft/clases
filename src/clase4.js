@@ -6,25 +6,20 @@ class Personaje{
     daño = 15;
 
     get estado(){
-
         if(this.hp > 100){
             return "Saludable"
         }
         else if(this.hp <= 100){
             return "Débil"
         }
-
     }
 
     set recibirDaño(cantidad){
-
         this.hp -= cantidad
-
         if(cantidad > this.hp){
             this.hp = 0
             console.log(`${this.nombre} ha muerto`)
         }
-
         console.log(`${this.nombre} ahora tiene ${this.hp}`)
     }
 
@@ -45,11 +40,8 @@ class Personaje{
     }
 
     atacar(objetivo){
-
         objetivo.recibirDaño = this.daño
-
         console.log(`${this.nombre} ataca a ${objetivo.nombre} y le inflije ${this.daño} de veneno`)
-
     }
 }
 
@@ -80,40 +72,24 @@ console.log(swarow.estado)
 //Polimorfismo la capacidad de mutar o cambiar o agregar algo a un método o propiedad existente
 
 class Paladin extends Personaje {
-
     constructor(nombre){
-
         super(nombre, "Poder sagrado")
-
     }
-
     curar(objetivo){
         objetivo.recibirSanación = 20;
     }
-
 }
 
 class Pícaro extends Personaje{
-
-
     dañoAdicional = 10;
-
     constructor(nombre){
-
         super(nombre, "Energía")
-    
     }
-
     atacar(objetivo){
-
         super.atacar(objetivo)
-
         objetivo.recibirDaño = this.dañoAdicional
-
         console.log(`Y le inflije ${this.dañoAdicional} de daño adicional a ${objetivo.nombre}.`)
-
     }
-
 }
 
 let frutadin = new Paladin("Naq");
