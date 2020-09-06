@@ -1,4 +1,4 @@
-//Variables
+//Variables estáticas
 var variableUno = "Valor de \"texto\"" //Cadena de texto
 let variabledos = 1234 //Números 
 //Constantes
