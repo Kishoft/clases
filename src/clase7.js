@@ -92,6 +92,15 @@ function* countAppleSales() {
         yield saleList[i]
     }
 }
+//La misma pero con sintaxis de clase
+class Manzanas {
+    static *countAppleSales(){
+        let saleList = [3, 7, 5]
+        for (let i = 0; i < saleList.length; i++) {
+            yield saleList[i]
+        }
+    }
+}
 
 let generador = countAppleSales();
 
