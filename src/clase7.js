@@ -107,6 +107,3 @@ let generador = countAppleSales();
 console.log(generador.next())
 setTimeout(() => console.log(generador.next()), 2000)
 setTimeout(() => console.log(generador.next()), 4000)
-
-
-
