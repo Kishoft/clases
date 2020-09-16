@@ -77,6 +77,16 @@ let btnTransformar = document.getElementById("transformar");
 let outputTxtTransformado = document.getElementById("textoTransformado");
 
 let todoList = document.getElementById("todoList");
+let inputTarea = document.getElementById("tarea");
+let btnAgregar = document.getElementById("agregarTodo");
+
+btnAgregar.addEventListener("click", event => {
+    let elemento = document.createElement("li")
+    elemento.textContent = inputTarea.value;
+
+    todoList.appendChild(elemento);
+})
+
 
 btnTransformar.addEventListener("click", event => {
 
@@ -86,6 +96,20 @@ btnTransformar.addEventListener("click", event => {
     .then(texto => outputTxtTransformado.textContent = texto)
 
 })
+
+class Test{
+    constructor(){
+        this.algo = "algo"
+    }
+}
+
+let algo = new Test()
+
+console.log(algo)
+
+let algo2 = { "algo" : "algo" }
+
+console.log(algo2)
 
 
 /*

@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="shortcut icon" href="https://img1.freepng.es/20180501/dwe/kisspng-volkswagen-group-car-volkswagen-type-2-logo-volkswagen-vector-5ae91425423602.6587960315252244852712.jpg" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
     <main>
-
         <form>
-            <input type="text" name="oracion" id="oracion">
-            <input type="button" value="Transformar" id="transformar">
-            <output id="textoTransformado"></output>
+            <fieldset>
+                <legend>Minitizar un texto</legend>
+                <input type="text" name="oracion" id="oracion">
+                <input type="button" value="Transformar" id="transformar">
+                <hr>
+                <output id="textoTransformado"></output>
+            </fieldset>
+            <fieldset>
+                <legend>Agregar al TO-DO (qué hacer)</legend>
+                <input type="text" name="tarea" id="tarea">
+                <input type="button" value="agregar" id="agregarTodo">
+            </fieldset>
         </form>
 
         <ol id="todoList">
