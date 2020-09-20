@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Municipio Chichito</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Bienvenido al municipio Chichito</h1>
+    </header>
+    <main>
+        <section>
+            <h3>Registro de conducir</h3>
+            <form id="formManejo">
+                <h5>Verifica que puedas conducir</h5>
+                <fieldset>
+                    <legend>¿Posee alguna discapacidad?</legend>
+                    <input type="radio" id="si" name="discapacidad" value="si">
+                    <label for="si">Sí</label>
+                    <br>
+                    <input type="radio" id="no" name="discapacidad" value="no" checked>
+                    <label for="no">No</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Datos perosnales</legend>
+                    <label for="edad">Ingrese su edad:</label>
+                    <input type="number" name="edad" id="edad">
+                </fieldset>
+                <fieldset id="requisitosAdicionales" style="display : none">
+                    <legend>Requisitos adicionales</legend>
+                    <label for="carnet">Carnet de discapacidad</label>
+                    <input type="number" name="carnet" id="carnet">
+                </fieldset>
+                <input type="submit" value="Verificar" id="verificar">
+            </form>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
