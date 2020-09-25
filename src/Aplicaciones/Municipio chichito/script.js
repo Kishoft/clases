@@ -37,4 +37,8 @@ formManejo.addEventListener('submit', event => {
 
 })
 
+let trampa = document.getElementById('trampa');
 
+trampa.addEventListener('click', e => {
+    window.location = "https://www.taringa.net/"
+})

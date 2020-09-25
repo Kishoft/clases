@@ -5,31 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Municipio Chichito</title>
-    <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
+    <header class="fondoConColor">
         <h1>Bienvenido al municipio Chichito</h1>
     </header>
     <nav>
-        <ul class="nav nav-pills">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Active</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
+        <a href="https://www.youtube.com">Youtube</a>
+        <a href="#">Enlace</a>
+        <a href="#">Enlace</a>
+        <a href="#">Enlace</a>
+        <a href="#">Enlace</a>
     </nav>
     <main>
-        <section>
+        <section class="fondoConColor">
             <h3>Registro de conducir</h3>
             <form id="formManejo">
                 <h5>Verifica que puedas conducir</h5>
@@ -42,7 +33,7 @@
                     <label for="no">No</label>
                 </fieldset>
                 <fieldset>
-                    <legend>Datos perosnales</legend>
+                    <legend>Datos personales</legend>
                     <label for="edad">Ingrese su edad:</label>
                     <input type="number" name="edad" id="edad">
                 </fieldset>
@@ -53,6 +44,19 @@
                 </fieldset>
                 <input type="submit" value="Verificar" id="verificar">
             </form>
+        </section>
+        <section>
+            <h2>Cultura</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/TlpFYabRGZY" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </section>
+        <section>
+            <h2>Cochinadas</h2>
+            <figure>
+                <img src="./gato.jpg" alt="Gatito" srcset="" id="trampa">
+                <a href="http://www.taringa.net"><img src="./gato.jpg" alt="" srcset=""></a>
+            </figure>
         </section>
     </main>
     <script src="./script.js"></script>
