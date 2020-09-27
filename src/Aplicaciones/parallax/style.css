@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transform-style: preserve-3d;
+}
+html{
+   overflow: hidden;
+}
+body{
+    height: 100vh;
+    perspective: 100px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+section{
+    height: 400px;
+}
+section:nth-child(2){
+    transform: translateZ(-20px) scale(1.20);
+    background: url('./random-wallpaper-2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section:nth-child(3){
+    background-color: rgb(69, 42, 165);
+    transform: translateZ(40px);
+}
+section:nth-child(4){
+    background-color: rgb(164, 189, 21);
+    transform: translateZ(-20px);
+}
+section{
+    background-color: chartreuse;
+}
