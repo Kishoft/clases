@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+a{
+    cursor: pointer;
+}
+a:hover{
+    text-decoration: underline;
+    color:blue
+}
